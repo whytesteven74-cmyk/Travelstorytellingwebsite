@@ -21,7 +21,9 @@ export function Navigation() {
     { href: '#journey', label: 'Journey' },
     { href: '#voices', label: 'Voices' },
     { href: '#data', label: 'Reality' },
-    { href: '#wellness', label: 'Wellness' }
+    { href: '#wellness', label: 'Wellness' },
+    { href: '#media', label: 'Media' },
+    { href: '#connect', label: 'Connect' }
   ];
 
   const handleLinkClick = (href: string) => {

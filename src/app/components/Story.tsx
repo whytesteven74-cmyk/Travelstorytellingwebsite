@@ -3,7 +3,7 @@ import { Heart, Footprints, Sunrise } from 'lucide-react';
 
 export function Story() {
   return (
-    <section id="story" className="py-20 px-4 bg-gradient-to-b from-emerald-50 via-green-50 to-stone-50">
+    <section id="story" className="py-20 px-4 bg-gradient-to-b from-teal-50 via-emerald-100 to-green-100">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,8 +12,8 @@ export function Story() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-stone-700 mb-6">My Story</h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-stone-800 mb-6">My Story</h2>
+          <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed">
             A journey that began with pain transformed into a path of hope, 
             connection, and gentle healing.
           </p>
@@ -65,12 +65,12 @@ export function Story() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border border-green-100"
+            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border-2 border-emerald-200"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-200 to-green-100 rounded-full mb-6">
-              <Heart className="w-10 h-10 text-green-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-300 to-emerald-200 rounded-full mb-6">
+              <Heart className="w-10 h-10 text-emerald-700" />
             </div>
-            <h3 className="mb-3 text-green-700">Gentle Healing</h3>
+            <h3 className="mb-3 text-emerald-800">Gentle Healing</h3>
             <p className="text-stone-600 leading-relaxed">
               Finding peace through nature, movement, and self-compassion
             </p>
@@ -81,12 +81,12 @@ export function Story() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border border-emerald-100"
+            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border-2 border-green-200"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-200 to-emerald-100 rounded-full mb-6">
-              <Footprints className="w-10 h-10 text-emerald-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-300 to-green-200 rounded-full mb-6">
+              <Footprints className="w-10 h-10 text-green-700" />
             </div>
-            <h3 className="mb-3 text-emerald-700">Shared Stories</h3>
+            <h3 className="mb-3 text-green-800">Shared Stories</h3>
             <p className="text-stone-600 leading-relaxed">
               Listening to and learning from others on similar journeys
             </p>
@@ -97,12 +97,12 @@ export function Story() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border border-stone-200"
+            className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl shadow-lg border-2 border-teal-200"
           >
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-stone-200 to-stone-100 rounded-full mb-6">
-              <Sunrise className="w-10 h-10 text-stone-600" />
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-teal-300 to-teal-200 rounded-full mb-6">
+              <Sunrise className="w-10 h-10 text-teal-700" />
             </div>
-            <h3 className="mb-3 text-stone-700">New Beginnings</h3>
+            <h3 className="mb-3 text-teal-800">New Beginnings</h3>
             <p className="text-stone-600 leading-relaxed">
               Every day is a fresh start, a chance to try again
             </p>

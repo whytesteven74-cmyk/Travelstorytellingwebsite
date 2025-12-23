@@ -64,8 +64,14 @@ const stories: Story[] = [
 
 export function Voices() {
   return (
-    <section id="voices" className="py-20 px-4 bg-gradient-to-b from-green-50 via-stone-50 to-emerald-50">
-      <div className="max-w-6xl mx-auto">
+    <section id="voices" className="py-20 px-4 bg-gradient-to-b from-teal-100 via-emerald-100 to-green-100 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-400 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-green-400 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,8 +79,8 @@ export function Voices() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-stone-700 mb-6">Beautiful Souls I've Met</h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-stone-800 mb-6">Beautiful Souls I've Met</h2>
+          <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed">
             These people taught me about strength, kindness, and what it really means to be human.
           </p>
         </motion.div>
@@ -88,9 +94,9 @@ export function Voices() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <Card className="h-full bg-white/70 backdrop-blur-sm border-green-100 hover:shadow-xl transition-all duration-300 rounded-2xl">
+              <Card className="h-full bg-white/70 backdrop-blur-sm border-2 border-emerald-200 hover:border-emerald-400 hover:shadow-xl transition-all duration-300 rounded-2xl">
                 <CardContent className="p-8">
-                  <Heart className="w-8 h-8 text-green-500 mb-4" />
+                  <Heart className="w-8 h-8 text-emerald-500 mb-4" />
                   <blockquote className="text-stone-700 italic mb-4 leading-relaxed">
                     "{story.quote}"
                   </blockquote>
@@ -112,12 +118,12 @@ export function Voices() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mt-16 text-center p-8 bg-gradient-to-r from-emerald-100 to-green-100 rounded-3xl"
+          className="mt-16 text-center p-8 bg-gradient-to-r from-emerald-200 to-green-200 rounded-3xl border-2 border-emerald-300"
         >
-          <p className="text-stone-700 mb-3 leading-relaxed">
+          <p className="text-stone-800 mb-3 leading-relaxed font-medium">
             Every person here shared their story with trust and openness.
           </p>
-          <p className="text-stone-600 leading-relaxed">
+          <p className="text-stone-700 leading-relaxed">
             Their vulnerability is a gift. I hope their words touch your heart the way they touched mine.
           </p>
         </motion.div>

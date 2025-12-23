@@ -57,7 +57,7 @@ const journeyStops: JourneyStop[] = [
 
 export function Journey() {
   return (
-    <section id="journey" className="py-20 px-4 bg-gradient-to-b from-stone-50 via-emerald-50 to-green-50">
+    <section id="journey" className="py-20 px-4 bg-gradient-to-b from-green-100 via-teal-50 to-emerald-100">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,8 +66,8 @@ export function Journey() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-stone-700 mb-6">The Path I Walked</h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-stone-800 mb-6">The Path I Walked</h2>
+          <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed">
             Each place taught me something new about healing, hope, and myself.
           </p>
         </motion.div>
@@ -80,7 +80,7 @@ export function Journey() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-green-100"
+              className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border-2 border-emerald-200"
             >
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className={index % 2 === 1 ? 'md:order-2' : ''}>
@@ -92,7 +92,7 @@ export function Journey() {
                 </div>
 
                 <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                  <div className="flex items-center gap-2 text-emerald-600 mb-2">
+                  <div className="flex items-center gap-2 text-emerald-700 mb-2 font-semibold">
                     <MapPin className="w-5 h-5" />
                     <span>{stop.country}</span>
                   </div>
@@ -113,9 +113,9 @@ export function Journey() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mt-16 text-center p-8 bg-gradient-to-r from-green-100 to-emerald-100 rounded-3xl"
+          className="mt-16 text-center p-8 bg-gradient-to-r from-emerald-200 to-green-200 rounded-3xl border-2 border-emerald-300"
         >
-          <p className="text-stone-700 italic leading-relaxed">
+          <p className="text-stone-800 italic leading-relaxed font-medium">
             The journey continues, one gentle step at a time... 
             And maybe, if you feel called to, you can start your own journey too.
           </p>

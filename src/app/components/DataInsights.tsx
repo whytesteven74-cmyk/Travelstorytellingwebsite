@@ -35,8 +35,14 @@ const stats = [
 
 export function DataInsights() {
   return (
-    <section id="data" className="py-20 px-4 bg-gradient-to-b from-emerald-50 via-green-50 to-stone-50">
-      <div className="max-w-6xl mx-auto">
+    <section id="data" className="py-20 px-4 bg-gradient-to-b from-green-100 via-teal-100 to-emerald-100 relative overflow-hidden">
+      {/* Decorative background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-green-400 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-emerald-400 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,8 +50,8 @@ export function DataInsights() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-stone-700 mb-6">Understanding the Reality</h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-stone-800 mb-6">Understanding the Reality</h2>
+          <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed">
             Behind every number is a person. Behind every person is a story worth knowing.
           </p>
         </motion.div>
@@ -60,7 +66,7 @@ export function DataInsights() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
-              <Card className="bg-white/70 backdrop-blur-sm border-green-100 rounded-2xl">
+              <Card className="bg-white/70 backdrop-blur-sm border-2 border-emerald-200 rounded-2xl hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${stat.gradient} rounded-full mb-4`}>
                     <stat.icon className="w-8 h-8 text-stone-600" />
@@ -80,9 +86,9 @@ export function DataInsights() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-green-100 shadow-lg"
+          className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-2 border-emerald-200 shadow-xl"
         >
-          <h3 className="text-stone-700 mb-6 text-center">What I've Learned</h3>
+          <h3 className="text-stone-800 mb-6 text-center">What I've Learned</h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="flex gap-3 items-start">
@@ -144,9 +150,9 @@ export function DataInsights() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mt-12 text-center p-8 bg-gradient-to-r from-green-100 via-emerald-100 to-teal-100 rounded-3xl"
+          className="mt-12 text-center p-8 bg-gradient-to-r from-emerald-200 via-green-200 to-teal-200 rounded-3xl border-2 border-emerald-300"
         >
-          <p className="text-stone-700 italic leading-relaxed">
+          <p className="text-stone-800 italic leading-relaxed font-medium">
             "Data tells us the scale of the challenge. But stories remind us why it matters. 
             Both are important. Both deserve our attention."
           </p>
